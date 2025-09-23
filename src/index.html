@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <i class="fa-solid fa-camera-retro" id="nav_logo"> </i>
+
+        <ul class="nav_list">
+          <li class="nav-item">
+            <a href="#home">Ínicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#packages">Pacotes</a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonials">Avaliações</a>
+          </li>
+        </ul>
+
+        <a
+          href="https://wa.me/5567992890225?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20pacotes"
+          target="_blank"
+          class="btn-default"
+        >
+          Reservar Momento
+        </a>
+
+        <button id="mobile_btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+      <div id="mobile_menu">
+        <ul id="mobile_nav_list">
+          <li class="nav-item">
+            <a href="#home">Ínicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#packages">Pacotes</a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonials">Avaliações</a>
+          </li>
+        </ul>
+        <a
+          href="https://wa.me/5567992890225?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20pacotes"
+          target="_blank"
+          class="btn-default"
+        >
+          Reservar Momento
+        </a>
+      </div>
+    </header>
+    <main id="content">
+      <section id="home">
+        <div id="cta" class="reveal">
+          <h1 class="title">A Fotografia que <span>encanta</span></h1>
+          <p class="description">
+            Olá, sou <b>Carolina Alves</b>, uma mulher repleta de recomeços,
+            aprendizados e fases que me moldaram. Com um olhar sensível e
+            acolhedor, há 13 anos meu propósito é te guiar em uma experiência
+            fotográfica que vai além do registro. Em cada ensaio, valorizo a sua
+            história, o seu momento e as suas emoções. Através da minha
+            sensibilidade, entrego um espaço seguro para você se ver com amor e
+            guardar memórias que contam quem você é. Mais do que cliques, é uma
+            experiência para acolher, valorizar e ressignificar cada fase da sua
+            vida, dedicando-me a identificar a sua luz interna e a revelar a
+            história única que vive em você
+          </p>
+
+          <div id="cta_buttons">
+            <a class="btn-default" href="#packages"
+              ><i class="fa-solid fa-camera-retro" id="img_pacotes"> </i> Ver
+              Pacotes
+            </a>
+
+            <a
+              href="https://wa.me/5567992890225?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20pacotes"
+              target="_blank"
+              id="phone_button"
+            >
+              <button class="btn-default">
+                <i class="fa-brands fa-whatsapp"> </i>
+              </button>
+              67 99289-0225
+            </a>
+          </div>
+
+          <div class="social-media-buttons">
+            <a
+              href="https://wa.me/5567992890225?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20pacotes"
+              target="_blank"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/carolinaalvesfoto/"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+          </div>
+        </div>
+
+        <div id="banner"><img src="./images/home.png" alt="" /></div>
+      </section>
+
+      <section id="packages" class="reveal">
+        <h2 class="subtitle-card">NOSSOS PACOTES ESPECIAIS</h2>
+
+        <div id="card_display">
+          <div id="card">
+            <div class="prices_card_image">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="./images/card1.png" alt="pacoteBasico" />
+            <div id="prices_card_description">
+              <h3 class="card-title">Essência</h3>
+              <span class="card-description">
+                Para quem deseja um momento de reconexão. Um ensaio intimista
+                para celebrar a sua verdade.
+              </span>
+            </div>
+          </div>
+
+          <div id="card">
+            <div class="prices_card_image">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="./images/card1.png" alt="pacoteBasico" />
+            <div id="prices_card_description">
+              <h3 class="card-title">Jornada</h3>
+              <span class="card-description">
+                Uma experiência completa para registrar a intensidade e a emoção
+                de uma fase marcante
+              </span>
+            </div>
+          </div>
+
+          <div id="card">
+            <div class="prices_card_image">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="./images/card1.png" alt="pacoteBasico" />
+            <div id="prices_card_description">
+              <h3 class="card-title">Recomeço</h3>
+              <span class="card-description">
+                Ideal para contar histórias em profundidade. Um ensaio afetivo
+                para marcar grandes transformações e novas fases
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="reveal">
+        <div id="testimonials_img">
+          <img src="./images/home.png" alt="" class="testimonials-img" />
+        </div>
+
+        <div id="testimonials_content">
+          <h2 class="testimonials-title">HISTÓRIAS</h2>
+          <h2 class="testimonials-subtitle">
+            Veja as histórias que já eternizamos!
+          </h2>
+
+          <div id="feedbacks">
+            <div class="feedback">
+              <img src="./images/avatar.png" class="feedback-avatar" alt="" />
+              <div class="feedback-content">
+                <p>
+                  Fulana da Silva
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </p>
+
+                <p>
+                  "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Repellat voluptatibus cumque dolor ea est quae alias
+                  necessitatibus"
+                </p>
+              </div>
+            </div>
+
+            <div class="feedback">
+              <img src="./images/avatar.png" class="feedback-avatar" alt="" />
+              <div class="feedback-content">
+                <p>
+                  Fulana da Silva
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </p>
+
+                <p>
+                  "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Repellat voluptatibus cumque dolor ea est quae alias
+                  necessitatibus"
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn-default">
+            <a
+              href="https://encurtador.com.br/1SBGe"
+              target="_blank"
+              class="btn-testimonials"
+            >
+              VEJA MAIS AVALIAÇÕES</a
+            >
+          </button>
+        </div>
+      </section>
+
+      <footer class="reveal">
+        <img src="./images/wave.svg" alt="" />
+
+        <div id="footer_items">
+          <span id="copyrigth"> &copy 2025 José William </span>
+
+          <div class="social-media-buttons">
+            <a
+              href="https://wa.me/5567992890225?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20pacotes"
+              target="_blank"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/carolinaalvesfoto/"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

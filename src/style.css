@@ -1,0 +1,92 @@
+@import url('./header.css');
+@import url('./home.css');
+@import url('./testimonials.css');
+@import url('./footer.css');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  height: 100%;
+  background-color: #f0f0f0;
+}
+
+section {
+  padding: 28px 8%;
+}
+
+.btn-default {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border: none;
+  padding: 10px 14px;
+  color: #2d2d2d;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0px 10px 13px -7px;
+  transition: all 0.3s ease;
+}
+
+.btn-default:hover {
+  background-color: #f0f0f0;
+}
+
+.social-media-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-media-buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 40px;
+  font-size: 1.25rem;
+  background-color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #2d2d2d;
+  box-shadow: 0px 10px 13px -7px;
+  transition: box-shadow 0.3s ease;
+}
+
+.social-media-buttons a:hover {
+  box-shadow: 0px 10px 26px -7px;
+}
+.reveal {
+  opacity: 0;
+  translate: -50px 0;
+  transition: opacity 1s ease, translate 1s ease;
+}
+
+.reveal.fadeIn {
+  opacity: 1;
+  translate: 0 0;
+}
+
+#home,
+#packages,
+#testimonials {
+  scroll-margin-top: 96px;
+}
+
+@media screen and (max-width: 450px) {
+  #home {
+    scroll-margin-top: 200px;
+  }
+
+  #packages {
+    scroll-margin-top: 150px;
+  }
+
+  #testimonials {
+    scroll-margin-top: 200px;
+  }
+}

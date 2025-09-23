@@ -1,0 +1,160 @@
+#home {
+  display: flex;
+  min-height: calc(100vh - 96px);
+  justify-content: space-between;
+}
+
+#cta {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-top: 5%;
+}
+
+#cta .title {
+  font-size: 3.5rem;
+  color: #2d2d2d;
+}
+
+#cta .title span {
+  color: #141414;
+}
+
+#cta .description {
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+#cta_buttons {
+  display: flex;
+  gap: 1.5rem;
+}
+#cta_buttons a {
+  text-decoration: none;
+  color: #2d2d2d;
+}
+
+#phone_button {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  background-color: white;
+  font-weight: 500;
+  box-shadow: 0px 10px 13px -7px;
+  border-radius: 10px;
+  padding: 8px 14px;
+}
+
+#banner img {
+  height: 100%;
+}
+
+@media screen and (max-width: 1170px) {
+  #home {
+    min-height: 100%;
+    padding-top: 0px;
+  }
+  #banner,
+  #banner img {
+    display: none;
+  }
+  #cta {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #phone_button button {
+    display: none;
+  }
+}
+
+#packages {
+  min-height: calc(100vh - 96px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#card_display {
+  display: flex;
+
+  gap: 2rem;
+}
+#card {
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+  border-radius: 1rem;
+  box-shadow: 0px 10px 26px -7px;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+#card .prices_card_image i {
+  background-color: grey;
+  position: absolute;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  width: 70px;
+  height: 70px;
+  top: -10px;
+  right: -10px;
+  border-radius: 0px 37.5px 0px 42.5px;
+}
+
+#prices .title-card {
+  color: #2d2d2d;
+}
+
+#prices_card_description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#prices_card_description .card-title {
+  margin: 12px 0px;
+}
+
+@media screen and (max-width: 1170px) {
+  #card_display {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #card {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #packages {
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  #card_display {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #card {
+    width: 90%;
+    padding: 1rem;
+  }
+}
