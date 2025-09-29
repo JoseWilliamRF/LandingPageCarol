@@ -7,6 +7,7 @@ const packages = document.querySelector('#packages');
 const testimonials = document.querySelector('#testimonials');
 const footer = document.querySelector('footer');
 const sectionObserve = [home, packages, testimonials, footer];
+const todosOsCards = document.querySelectorAll('.card');
 
 // EVENTO DE CLIQUE ESCONDE MENU
 
@@ -53,3 +54,27 @@ sectionObserve.forEach(section => {
   }
 });
 // fim EVENTO DE FADEIN NAS SECTIONS
+
+//EVENTO DE CLIQUE
+
+todosOsCards.forEach(card => {
+  const carousel = card.querySelector('.carousel');
+  const btnAnterior = document.createElement('button');
+  const btnProximo = document.createElement('button');
+
+  btnAnterior.className = 'btn-carousel btn-left';
+  btnProximo.className = 'btn-carousel btn-right';
+  btnAnterior.innerHTML = '<i class="fa-solid fa-chevron-left"></i>';
+  btnProximo.innerHTML = '<i class="fa-solid fa-chevron-right"></i>';
+
+  card.appendChild(btnAnterior);
+  card.appendChild(btnProximo);
+
+  btnProximo.addEventListener('click', () => {
+    carousel.scrollLeft += 350;
+  });
+
+  btnAnterior.addEventListener('click', () => {
+    carousel.scrollLeft -= 350;
+  });
+});

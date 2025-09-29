@@ -95,11 +95,12 @@
 }
 
 #card_display {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 
   gap: 2rem;
 }
-#card {
+.card {
   width: 100%;
   display: flex;
   padding: 1rem;
@@ -114,7 +115,54 @@
   overflow: hidden;
 }
 
-#card .prices_card_image i {
+.carousel {
+  width: 100%;
+  display: flex;
+  gap: 1em;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  anchor-name: --carousel;
+  scroll-snap-type: x mandatory;
+  padding-inline: 50%;
+}
+
+.carousel img {
+  padding: 1rem;
+  scroll-snap-align: center;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.btn-carousel {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.btn-left {
+  left: 10px;
+}
+
+.btn-right {
+  right: 10px;
+}
+
+.carousel1 {
+  flex: 0 0 20em;
+}
+
+.card .prices_card_image i {
   background-color: grey;
   position: absolute;
   display: flex;
@@ -145,13 +193,26 @@
 }
 
 @media screen and (max-width: 1170px) {
-  #card_display {
-    flex-wrap: wrap;
+  #packages {
+    display: flex;
+    align-items: center;
     justify-content: center;
   }
 
-  #card {
+  #card_display {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    place-items: center;
+  }
+
+  .card {
     width: 60%;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -162,14 +223,22 @@
   }
 
   #card_display {
-    flex-wrap: wrap;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
   }
 
-  #card {
-    width: 90%;
-    padding: 1rem;
+  .carousel img {
+    min-width: 300px;
+  }
+
+  .carousel1 {
+    flex: 0 0 100%;
+  }
+
+  .card {
+    width: 100%;
   }
 }
