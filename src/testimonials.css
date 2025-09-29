@@ -73,6 +73,10 @@
   #testimonials_img {
     display: none;
   }
+
+  #testimonials {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media screen and (max-width: 450px) {
