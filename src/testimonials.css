@@ -95,4 +95,8 @@
     font-size: 1rem;
     justify-content: space-between;
   }
+
+  .feedback-content p {
+    font-size: 0.87rem;
+  }
 }
