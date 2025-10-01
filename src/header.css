@@ -12,7 +12,7 @@ header {
   color: #2d2d2d;
   align-items: center;
   display: flex;
-  font-size: 32px;
+  width: 64px;
 }
 
 #navbar {
