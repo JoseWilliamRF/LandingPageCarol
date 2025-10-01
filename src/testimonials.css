@@ -20,16 +20,12 @@
 }
 
 #testimonials_content .testimonials-title {
+  margin-bottom: 2rem;
   font-size: 2rem;
   text-align: center;
   color: #919191;
 }
-#testimonials_content .testimonials-subtitle {
-  font-size: 1.5rem;
-  text-align: center;
-  color: #303030;
-  margin-bottom: 3rem;
-}
+
 #feedbacks {
   display: flex;
   gap: 28px;
