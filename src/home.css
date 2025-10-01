@@ -42,7 +42,7 @@
   align-items: center;
   background-color: white;
   font-weight: 500;
-  box-shadow: 0px 10px 13px -7px;
+  box-shadow: 0px 2px 13px -7px;
   border-radius: 10px;
   padding: 8px 14px;
 }
@@ -52,7 +52,7 @@
   object-fit: contain;
   max-height: auto;
   border-radius: 10%;
-  box-shadow: 0px 10px 13px 1px;
+  box-shadow: 0px 0px 5px 0px;
 }
 
 @media screen and (max-width: 1170px) {
@@ -110,7 +110,8 @@
   justify-content: center;
   margin-top: 32px;
   border-radius: 1rem;
-  box-shadow: 0px 10px 26px -7px;
+  box-shadow: 0px 2px 13px -7px;
+
   background-color: white;
   position: relative;
   overflow: hidden;
