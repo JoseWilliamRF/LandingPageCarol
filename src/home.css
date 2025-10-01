@@ -85,6 +85,13 @@
   #phone_button button {
     display: none;
   }
+  #home .title {
+    font-size: 2rem;
+  }
+
+  #home .sub-title {
+    font-size: 1.3rem;
+  }
 }
 
 #packages {
