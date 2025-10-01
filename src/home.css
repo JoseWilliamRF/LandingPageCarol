@@ -128,8 +128,10 @@
 }
 
 .carousel img {
-  padding: 1rem;
   scroll-snap-align: center;
+  width: 21rem;
+
+  border-radius: 1rem;
 }
 
 .carousel::-webkit-scrollbar {
@@ -184,10 +186,13 @@
 
 #prices_card_description {
   display: flex;
+  max-height: 150px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: justify;
+  padding: 1rem;
+  font-size: 15px;
 }
 #prices_card_description .card-title {
   margin: 12px 0px;
@@ -230,7 +235,9 @@
     justify-content: center;
     align-items: center;
   }
-
+  #prices_card_description {
+    font-size: 0.87rem;
+  }
   .carousel img {
     min-width: 300px;
   }
