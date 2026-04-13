@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://carolinaalvesfoto.com.br/sitemap.xml
