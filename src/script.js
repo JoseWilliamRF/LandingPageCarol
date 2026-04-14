@@ -8,8 +8,17 @@ const testimonials = document.querySelector('#testimonials');
 const footer = document.querySelector('footer');
 const sectionObserve = [home, packages, testimonials, footer];
 const todosOsCards = document.querySelectorAll('.card');
+const linksDoMenu = document.querySelectorAll('#mobile_menu a');
 
 // EVENTO DE CLIQUE ESCONDE MENU
+
+linksDoMenu.forEach(link => {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.remove('active'); // Esconde o menu
+    icon.classList.remove('fa-x'); // Volta o ícone para o hambúrguer
+    icon.classList.add('fa-bars');
+  });
+});
 
 mobileBtn.addEventListener('click', () => {
   mobileMenu.classList.toggle('active');

@@ -85,6 +85,15 @@ header {
     align-items: center;
     justify-content: center;
     gap: 12px;
+
+    /* AS 5 LINHAS NOVAS: */
+    position: absolute; /* Faz parar de empurrar o site para baixo */
+    top: 100%; /* Faz o menu abrir exatamente colado na borda de baixo do header */
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0; /* CRUCIAL: Mesma cor do header para não ficar transparente */
+    padding-bottom: 20px; /* Um respiro para não colar nos botões */
+    box-shadow: 0px 10px 15px -10px rgba(0, 0, 0, 0.2); /* Sombra para separar o menu do resto do site */
   }
   #mobile_nav_list {
     list-style: none;
