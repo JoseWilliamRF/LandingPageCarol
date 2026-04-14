@@ -1,6 +1,6 @@
 # 📸 Carolina Alves Fotografia | Landing Page Profissional
 
-![Landing Page Preview](./preview/preview.png)
+![Landing Page Preview](./preview/preview.png?v=2)
 
 Landing page de alta performance desenvolvida para a fotógrafa **Carolina Alves**, baseada em Campo Grande - MS. O projeto foca em uma experiência de usuário (UX) sensível e fluida, aliada a uma arquitetura técnica otimizada para SEO e conversão.
 
