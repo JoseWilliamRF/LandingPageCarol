@@ -96,7 +96,7 @@ window.addEventListener('load', () => {
   if (mediaContainer) {
     const bgVideo = document.createElement('video');
 
-    bgVideo.src = './video/bg-video.mp4';
+    bgVideo.src = './video/bgvideo2.mp4';
 
     bgVideo.autoplay = true;
     bgVideo.muted = true;
