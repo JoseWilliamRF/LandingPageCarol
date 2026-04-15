@@ -63,8 +63,10 @@ section {
 }
 .reveal {
   opacity: 0;
-  translate: -50px 0;
-  transition: opacity 1s ease, translate 1s ease;
+  translate: 0 30px;
+  transition:
+    opacity 0.5s ease-out,
+    translate 0.5s ease-out;
 }
 
 .reveal.fadeIn {

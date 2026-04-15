@@ -52,7 +52,7 @@ const handleIntersection = (entries, observer) => {
 };
 
 const observerOptions = {
-  threshold: 0.15,
+  threshold: 0.08,
 };
 
 const observer = new IntersectionObserver(handleIntersection, observerOptions);
@@ -86,4 +86,27 @@ todosOsCards.forEach(card => {
   btnAnterior.addEventListener('click', () => {
     carousel.scrollLeft -= 350;
   });
+});
+// ==========================================
+// VÍDEO DE FUNDO ASSÍNCRONO (LAZY LOAD)
+// ==========================================
+window.addEventListener('load', () => {
+  const mediaContainer = document.getElementById('media_bg');
+
+  if (mediaContainer) {
+    const bgVideo = document.createElement('video');
+
+    bgVideo.src = './video/bg-video.mp4';
+
+    bgVideo.autoplay = true;
+    bgVideo.muted = true;
+    bgVideo.playsInline = true;
+    bgVideo.loop = true;
+
+    bgVideo.addEventListener('canplaythrough', () => {
+      bgVideo.style.opacity = '1';
+    });
+
+    mediaContainer.appendChild(bgVideo);
+  }
 });

@@ -5,11 +5,51 @@
   display: flex;
   align-items: center;
   min-height: calc(100vh - 96px);
-  background-image: url('./images/CarolinaAlvesSemBg.png');
-  background-size: cover;
-  background-position: center right;
-  background-repeat: no-repeat;
   padding: 0 5%;
+}
+
+/* 👇 COLE ISSO AQUI LOGO ABAIXO DO #home 👇 */
+
+/* CONTAINER DA IMAGEM E DO VÍDEO */
+.media-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Garante que fique atrás do texto */
+}
+
+.media-background img,
+.media-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center right; /* Mantém a Carol na direita no Desktop */
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 1.5s ease;
+}
+
+.media-background video {
+  opacity: 0; /* O vídeo nasce invisível */
+}
+
+/* BOTÃO DE RESERVAR MOMENTO */
+.btn-cta-home {
+  margin-top: 15px;
+  background-color: #2d2d2d;
+  color: #ffffff;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  width: max-content; /* O botão não estica, fica no tamanho do texto */
+  border-radius: 8px; /* Arredonda para combinar com a identidade visual */
+  text-decoration: none;
+}
+
+.btn-cta-home:hover {
+  background-color: #1a1a1a;
 }
 
 #cta {
@@ -206,7 +246,6 @@
   color: #555;
   line-height: 1.5;
 }
-
 /* =========================================
    MEDIA QUERIES (TABLET & MOBILE)
 ========================================= */
@@ -214,10 +253,16 @@
 @media screen and (max-width: 1170px) {
   /* HOME MOBILE/TABLET */
   #home {
-    background-position: 70% center;
     justify-content: center;
-    padding: 100px 20px 40px;
-    min-height: auto;
+    padding: 20px 20px 40px; /* Menos espaço no topo para o bloco poder descer */
+    min-height: calc(100vh - 96px); /* Garante que a seção ocupe a tela toda */
+    align-items: flex-end; /* 👇 A MÁGICA: Joga o bloco de texto pro rodapé */
+  }
+
+  /* NOVO: Ajusta o foco do vídeo/foto para não cortar a Carol no celular */
+  .media-background img,
+  .media-background video {
+    object-position: 70% center;
   }
 
   #cta {
@@ -227,6 +272,8 @@
     padding: 30px 20px;
     border-radius: 15px;
     backdrop-filter: blur(8px);
+    margin-top: 0;
+    margin-bottom: 20px; /* Descola o bloco um pouquinho do fim da tela */
   }
 
   #cta .description,
@@ -255,5 +302,11 @@
 
   .card-description {
     font-size: 0.9rem;
+  }
+
+  /* NOVO: Faz o botão de conversão ficar mais chamativo em telas muito finas */
+  .btn-cta-home {
+    width: 100%; /* Estica o botão para facilitar o clique com o polegar */
+    text-align: center;
   }
 }
