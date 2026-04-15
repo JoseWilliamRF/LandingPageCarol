@@ -8,8 +8,6 @@
   padding: 0 5%;
 }
 
-/* 👇 COLE ISSO AQUI LOGO ABAIXO DO #home 👇 */
-
 /* CONTAINER DA IMAGEM E DO VÍDEO */
 .media-background {
   position: absolute;
@@ -17,7 +15,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; /* Garante que fique atrás do texto */
+  z-index: -1;
 }
 
 .media-background img,
@@ -25,7 +23,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center right; /* Mantém a Carol na direita no Desktop */
+  object-position: center right;
   position: absolute;
   top: 0;
   left: 0;
@@ -33,7 +31,7 @@
 }
 
 .media-background video {
-  opacity: 0; /* O vídeo nasce invisível */
+  opacity: 0;
 }
 
 /* BOTÃO DE RESERVAR MOMENTO */
@@ -43,8 +41,8 @@
   color: #ffffff;
   padding: 14px 32px;
   font-size: 1.1rem;
-  width: max-content; /* O botão não estica, fica no tamanho do texto */
-  border-radius: 8px; /* Arredonda para combinar com a identidade visual */
+  width: max-content;
+  border-radius: 8px;
   text-decoration: none;
 }
 
@@ -119,24 +117,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px 5%; /* Respiro padrão */
+  padding: 10px 5%;
 }
 
 .subtitle-card {
   color: #2d2d2d;
-  margin-bottom: 30px; /* Aumente esse número para empurrar os cards mais para baixo */
-  margin-top: 20px; /* Aumente esse número se quiser empurrar a palavra mais para longe do topo */
+  margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 #card_display {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(300px, 1fr)
-  ); /* Grid responsivo nativo */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   width: 100%;
-  max-width: 1200px; /* Limita a largura total no desktop */
+  max-width: 1200px;
 }
 
 .card {
@@ -146,26 +141,26 @@
   align-items: center;
   padding: 1rem;
   border-radius: 1rem;
-  box-shadow: 0px 4px 15px -5px rgba(0, 0, 0, 0.1); /* Sombra mais elegante */
+  box-shadow: 0px 4px 15px -5px rgba(0, 0, 0, 0.1);
   background-color: white;
   position: relative;
   overflow: hidden;
 }
 
 .card .prices_card_image i {
-  background-color: #2d2d2d; /* Troquei grey genérico por um tom mais elegante */
+  background-color: #2d2d2d;
   color: white;
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.5rem; /* Um pouco menor para não gritar */
+  font-size: 1.5rem;
   width: 60px;
   height: 60px;
-  top: 0; /* Ajustado para alinhar perfeitamente no canto */
+  top: 0;
   right: 0;
-  border-radius: 0 0 0 30px; /* Canto arredondado apenas para dentro */
-  z-index: 2; /* Garante que fique acima da foto */
+  border-radius: 0 0 0 30px;
+  z-index: 2;
 }
 
 /* CARROSSEL DENTRO DO CARD */
@@ -176,7 +171,6 @@
   overflow-x: auto;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
-  /* Removi padding-inline: 50%, estava forçando o scroll a começar no meio */
   border-radius: 0.5rem;
 }
 
@@ -185,24 +179,19 @@
 }
 
 .carousel1 {
-  flex: 0 0 100%; /* Faz a foto ocupar 100% da largura do carrossel */
+  flex: 0 0 100%;
   scroll-snap-align: center;
-  aspect-ratio: 4 / 3.8; /* DEIXA A FOTO PROPORCIONAL (Mude para 1/1 se quiser quadrada) */
-  object-fit: cover; /* Garante que a foto preencha sem amassar */
+  aspect-ratio: 4 / 3.8;
+  object-fit: cover;
   border-radius: 0.5rem;
 }
 
 /* BOTÕES DO CARROSSEL */
 .btn-carousel {
   position: absolute;
-  top: 35%; /* Subi um pouco para alinhar com o centro da foto, não do card */
+  top: 35%;
   transform: translateY(-50%);
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.8
-  ); /* Botão claro fica mais elegante */
+  background-color: rgba(255, 255, 255, 0.8);
   color: #2d2d2d;
   border: none;
   border-radius: 50%;
@@ -232,7 +221,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center; /* Centraliza o texto para combinar com o design limpo */
+  text-align: center;
   padding: 1.5rem 0.5rem 0.5rem;
 }
 
@@ -254,12 +243,11 @@
   /* HOME MOBILE/TABLET */
   #home {
     justify-content: center;
-    padding: 20px 20px 40px; /* Menos espaço no topo para o bloco poder descer */
-    min-height: calc(100vh - 96px); /* Garante que a seção ocupe a tela toda */
-    align-items: flex-end; /* 👇 A MÁGICA: Joga o bloco de texto pro rodapé */
+    padding: 20px 20px 40px;
+    min-height: calc(100vh - 96px);
+    align-items: flex-end;
   }
 
-  /* NOVO: Ajusta o foco do vídeo/foto para não cortar a Carol no celular */
   .media-background img,
   .media-background video {
     object-position: 70% center;
@@ -273,7 +261,7 @@
     border-radius: 15px;
     backdrop-filter: blur(8px);
     margin-top: 0;
-    margin-bottom: 20px; /* Descola o bloco um pouquinho do fim da tela */
+    margin-bottom: 20px;
   }
 
   #cta .description,
@@ -304,9 +292,8 @@
     font-size: 0.9rem;
   }
 
-  /* NOVO: Faz o botão de conversão ficar mais chamativo em telas muito finas */
   .btn-cta-home {
-    width: 100%; /* Estica o botão para facilitar o clique com o polegar */
+    width: 100%;
     text-align: center;
   }
 }
