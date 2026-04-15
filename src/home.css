@@ -243,8 +243,8 @@
   /* HOME MOBILE/TABLET */
   #home {
     justify-content: center;
-    padding: 20px 20px 40px;
-    min-height: calc(100vh - 96px);
+    padding: 20px 20px 10dvh;
+    min-height: calc(100dvh - 96px);
     align-items: flex-end;
   }
 
